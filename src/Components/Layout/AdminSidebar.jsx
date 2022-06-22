@@ -39,9 +39,9 @@ const AdminSidebar = () => {
                         </a>
                         <ul style={{ display: customerhideShow }}>
                             <li><NavLink to="/customer">Customers</NavLink></li>
-                            <li><NavLink to="/customer-booking">Customer Booking List</NavLink></li>
-                            <li><NavLink to="/customer-booking-details">Customer Booking Details</NavLink></li>
-                            <li><NavLink to="/customer-wallet">Customer Wallet</NavLink></li>
+                            <li><NavLink to="/customer-booking-list">Customer Booking List</NavLink></li>
+                            <li><NavLink to="/view-booking">Customer Booking Details</NavLink></li>
+                            <li><NavLink to="/wallet-transaction">Customer Wallet</NavLink></li>
                         </ul>
                     </li>
                     <li className="submenu">
