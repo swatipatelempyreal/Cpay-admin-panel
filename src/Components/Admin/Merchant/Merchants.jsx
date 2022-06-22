@@ -1,4 +1,6 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
+import { FilterComponent } from '../Common';
 
 const Merchants = () => {
     return (
@@ -10,196 +12,23 @@ const Merchants = () => {
                         <div className="col">
                             <h3 className="page-title">Merchants</h3>
                             <ul className="breadcrumb">
-                                <li className="breadcrumb-item"><a href="index.php">Dashboard</a></li>
+                                <li className="breadcrumb-item"><Link to="dashboard">Dashboard</Link></li>
                                 <li className="breadcrumb-item active">Merchants</li>
                             </ul>
                         </div>
                         <div className="col-auto">
-                            <a href="add-merchant.php" className="btn btn-primary me-1">
+                            <Link to="/add-merchant" className="btn btn-primary me-1">
                                 <i className="fas fa-plus" />
-                            </a>
-                            <a className="btn btn-primary filter-btn" href="javascript:void(0);" id="filter_search">
+                            </Link>
+                            <Link className="btn btn-primary filter-btn" to="javascript:void(0);" id="filter_search">
                                 <i className="fas fa-filter" />
-                            </a>
+                            </Link>
                         </div>
                     </div>
                 </div>
-                <div className="card report-card">
-                    <div className="card-body pb-0">
-                        <div className="row">
-                            <div className="col-md-12">
-                                <ul className="app-listing">
-                                    <li>
-                                        <div className="multipleSelection">
-                                            <div className="selectBox">
-                                                <p className="mb-0"><i data-feather="user-plus" className="me-1 select-icon" /> Select User</p>
-                                                <span className="down-icon"><i data-feather="chevron-down" /></span>
-                                            </div>
-                                            <div id="checkBoxes">
-                                                <form action="#">
-                                                    <p className="checkbox-title">Merchants Search</p>
-                                                    <div className="form-custom">
-                                                        <input type="text" className="form-control bg-grey" placeholder="Enter Customer Name" />
-                                                    </div>
-                                                    <div className="selectBox-cont">
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="username" />
-                                                            <span className="checkmark" /> Brian Johnson
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="username" />
-                                                            <span className="checkmark" /> Russell Copeland
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="username" />
-                                                            <span className="checkmark" /> Greg Lynch
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="username" />
-                                                            <span className="checkmark" /> John Blair
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="username" />
-                                                            <span className="checkmark" /> Barbara Moore
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="username" />
-                                                            <span className="checkmark" /> Hendry Evan
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="username" />
-                                                            <span className="checkmark" /> Richard Miles
-                                                        </label>
-                                                    </div>
-                                                    <button type="submit" className="btn w-100 btn-primary">Apply</button>
-                                                    <button type="reset" className="btn w-100 btn-grey">Reset</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="multipleSelection">
-                                            <div className="selectBox">
-                                                <p className="mb-0"><i data-feather="calendar" className="me-1 select-icon" /> Select Date</p>
-                                                <span className="down-icon"><i data-feather="chevron-down" /></span>
-                                            </div>
-                                            <div id="checkBoxes">
-                                                <form action="#">
-                                                    <p className="checkbox-title">Date Filter</p>
-                                                    <div className="selectBox-cont selectBox-cont-one h-auto">
-                                                        <div className="date-picker">
-                                                            <div className="form-custom cal-icon">
-                                                                <input className="form-control datetimepicker" type="text" placeholder="Form" />
-                                                            </div>
-                                                        </div>
-                                                        <div className="date-picker pe-0">
-                                                            <div className="form-custom cal-icon">
-                                                                <input className="form-control datetimepicker" type="text" placeholder="To" />
-                                                            </div>
-                                                        </div>
-                                                        <div className="date-list">
-                                                            <ul>
-                                                                <li><a href="#" className="btn date-btn">Today</a></li>
-                                                                <li><a href="#" className="btn date-btn">Yesterday</a></li>
-                                                                <li><a href="#" className="btn date-btn">Last 7 days</a></li>
-                                                                <li><a href="#" className="btn date-btn">This month</a></li>
-                                                                <li><a href="#" className="btn date-btn">Last month</a></li>
-                                                            </ul>
-                                                        </div>
-                                                    </div>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="multipleSelection">
-                                            <div className="selectBox">
-                                                <p className="mb-0"><i data-feather="book-open" className="me-1 select-icon" /> Select Status</p>
-                                                <span className="down-icon"><i data-feather="chevron-down" /></span>
-                                            </div>
-                                            <div id="checkBoxes">
-                                                <form action="#">
-                                                    <p className="checkbox-title">By Status</p>
-                                                    <div className="selectBox-cont">
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="name" defaultChecked />
-                                                            <span className="checkmark" /> All Users
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="name" />
-                                                            <span className="checkmark" /> Active
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="name" />
-                                                            <span className="checkmark" /> In Active
-                                                        </label>
-                                                    </div>
-                                                    <button type="submit" className="btn w-100 btn-primary">Apply</button>
-                                                    <button type="reset" className="btn w-100 btn-grey">Reset</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="multipleSelection">
-                                            <div className="selectBox">
-                                                <p className="mb-0"><i data-feather="bookmark" className="me-1 select-icon" /> By Category</p>
-                                                <span className="down-icon"><i data-feather="chevron-down" /></span>
-                                            </div>
-                                            <div id="checkBoxes">
-                                                <form action="#">
-                                                    <p className="checkbox-title">Category</p>
-                                                    <div className="form-custom">
-                                                        <input type="text" className="form-control bg-grey" placeholder="Enter Category Name" />
-                                                    </div>
-                                                    <div className="selectBox-cont">
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="category" />
-                                                            <span className="checkmark" /> Advertising
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="category" />
-                                                            <span className="checkmark" /> Food
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="category" />
-                                                            <span className="checkmark" /> Marketing
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="category" />
-                                                            <span className="checkmark" /> Repairs
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="category" />
-                                                            <span className="checkmark" /> Software
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="category" />
-                                                            <span className="checkmark" /> Stationary
-                                                        </label>
-                                                        <label className="custom_check w-100">
-                                                            <input type="checkbox" name="category" />
-                                                            <span className="checkmark" /> Travel
-                                                        </label>
-                                                    </div>
-                                                    <button type="submit" className="btn w-100 btn-primary">Apply</button>
-                                                    <button type="reset" className="btn w-100 btn-grey">Reset</button>
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div className="report-btn">
-                                            <a href="#" className="btn">
-                                                <img src="../inner-assets/img/icons/invoices-icon5.svg" alt className="me-2" /> Generate report
-                                            </a>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+
+                <FilterComponent />
+
                 <div className="row">
                     <div className="col-sm-12">
                         <div className="card card-table">
@@ -220,8 +49,8 @@ const Merchants = () => {
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-02.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Brian Johnson <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-02.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Brian Johnson <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -229,15 +58,15 @@ const Merchants = () => {
                                                 <td>16 Nov 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-03.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Marie Canales <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-03.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Marie Canales <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -245,15 +74,15 @@ const Merchants = () => {
                                                 <td>8 Nov 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Barbara Moore <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Barbara Moore <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -261,15 +90,15 @@ const Merchants = () => {
                                                 <td>24 Oct 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-05.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Greg Lynch <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-05.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Greg Lynch <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -277,15 +106,15 @@ const Merchants = () => {
                                                 <td>11 Oct 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Karlene Chaidez <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Karlene Chaidez <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -293,15 +122,15 @@ const Merchants = () => {
                                                 <td>29 Sep 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-07.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">John Blair <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-07.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">John Blair <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -309,15 +138,15 @@ const Merchants = () => {
                                                 <td>13 Aug 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-08.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Russell Copeland <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-08.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Russell Copeland <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -325,15 +154,15 @@ const Merchants = () => {
                                                 <td>2 Jul 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-09.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Leatha Bailey <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-09.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Leatha Bailey <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -341,15 +170,15 @@ const Merchants = () => {
                                                 <td>20 Jun 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Joseph Collins <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Joseph Collins <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -357,15 +186,15 @@ const Merchants = () => {
                                                 <td>9 May 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-11.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Jennifer Floyd <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-11.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Jennifer Floyd <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -373,15 +202,15 @@ const Merchants = () => {
                                                 <td>17 Apr 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-12.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Alex Campbell <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-12.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Alex Campbell <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -389,15 +218,15 @@ const Merchants = () => {
                                                 <td>30 Mar 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <a href="customer-profile.php" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-13.jpg" alt="User Image" /></a>
-                                                        <a href="customer-profile.php">Wendell Ward <span>9876543210</span></a>
+                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-13.jpg" alt="User Image" /></Link>
+                                                        <Link to="/customer-profile">Wendell Ward <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -405,8 +234,8 @@ const Merchants = () => {
                                                 <td>22 Feb 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <a href="edit-merchant.php" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</a>
-                                                    <a href="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</a>
+                                                    <Link to="/edit-merchant" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="javascript:void(0);" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                         </tbody>

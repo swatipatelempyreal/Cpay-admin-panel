@@ -1,5 +1,5 @@
 import React , { useState } from 'react'
-import { NavLink } from 'react-router-dom'
+import { NavLink , Link  } from 'react-router-dom'
 
 const AdminSidebar = () => {
 
@@ -64,7 +64,7 @@ const AdminSidebar = () => {
                         </ul>
                     </li>
                     <li>
-                        <a href="profile.php"><i data-feather="user" /> <span>Profile</span></a>
+                        <Link to="/profile"><i data-feather="user" /> <span>Profile</span></Link>
                     </li>
                     <li>
                         <a href="settings.php"><i data-feather="settings" /> <span>Settings</span></a>
