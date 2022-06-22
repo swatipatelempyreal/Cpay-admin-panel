@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {FilterComponent} from '../Common'
 
 const Customer = () => {
     return (
@@ -23,7 +24,7 @@ const Customer = () => {
                 </div>
 
                 {/* common filter import here */}
-
+                   <FilterComponent /> 
                
                 <div className="row">
                     <div className="col-sm-12">
