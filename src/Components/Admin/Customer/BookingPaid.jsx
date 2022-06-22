@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import {FilterComponent} from '../Common'
 
 const BookingPaid = () => {
     return (
@@ -10,13 +11,14 @@ const BookingPaid = () => {
                         <div className="col">
                             <h3 className="page-title">Bookings</h3>
                             <ul className="breadcrumb">
-                                <li className="breadcrumb-item"><Link to="/dashboard">Dashboard</Link></li>
+                                <li className="breadcrumb-item"><Link to="/admin/dashboard">Dashboard</Link></li>
                                 <li className="breadcrumb-item active">Bookings</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 {/* Common component import here */}
+                <FilterComponent />
                 <div className="card invoices-tabs-card">
                     <div className="card-body card-body pt-0 pb-0">
                         <div className="invoices-main-tabs">
@@ -24,10 +26,10 @@ const BookingPaid = () => {
                                 <div className="col-lg-8 col-md-8">
                                     <div className="invoices-tabs">
                                         <ul>
-                                            <li><Link to="/customer-booking-list">All Bookings</Link></li>
-                                            <li><Link to="/booking-paid" className="active">Paid</Link></li>
-                                            <li><Link to="/booking-overdue">Overdue</Link></li>
-                                            <li><Link to="/booking-cancelled">Cancelled</Link></li>
+                                            <li><Link to="/admin/customer-booking-list">All Bookings</Link></li>
+                                            <li><Link to="/admin/booking-paid" className="active">Paid</Link></li>
+                                            <li><Link to="/admin/booking-overdue">Overdue</Link></li>
+                                            <li><Link to="/admin/booking-cancelled">Cancelled</Link></li>
                                         </ul>
                                     </div>
                                 </div>
@@ -122,13 +124,13 @@ const BookingPaid = () => {
                                                         <input type="checkbox" name="Booking" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="/view-booking" className="invoice-link">IN093439#@09</Link>
+                                                    <Link to="/admin/view-booking" className="invoice-link">IN093439#@09</Link>
                                                 </td>
                                                 <td>Advertising</td>
                                                 <td>16 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /> Barbara Moore</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /> Barbara Moore</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 1,54,220</td>
@@ -136,11 +138,11 @@ const BookingPaid = () => {
                                                 <td><span className="badge bg-success-light">Paid</span></td>
                                                 <td className="text-end">
                                                     <div className="dropdown dropdown-action">
-                                                        <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
+                                                        <Link to="/admin#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
                                                         <div className="dropdown-menu dropdown-menu-end">
-                                                            <Link className="dropdown-item" to="edit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
-                                                            <Link className="dropdown-item" to="/view-booking"><i className="far fa-eye me-2" />View</Link>
-                                                            <Link className="dropdown-item" to="/"><i className="far fa-trash-alt me-2" />Delete</Link>
+                                                            <Link className="dropdown-item" to="/adminedit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
+                                                            <Link className="dropdown-item" to="/admin/view-booking"><i className="far fa-eye me-2" />View</Link>
+                                                            <Link className="dropdown-item" to="/admin/"><i className="far fa-trash-alt me-2" />Delete</Link>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -151,13 +153,13 @@ const BookingPaid = () => {
                                                         <input type="checkbox" name="Booking" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="/view-booking" className="invoice-link">IN093439#@10</Link>
+                                                    <Link to="/admin/view-booking" className="invoice-link">IN093439#@10</Link>
                                                 </td>
                                                 <td>Food</td>
                                                 <td>14 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /> Karlene Chaidez</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /> Karlene Chaidez</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 1,222</td>
@@ -165,11 +167,11 @@ const BookingPaid = () => {
                                                 <td><span className="badge bg-success-light">Paid</span></td>
                                                 <td className="text-end">
                                                     <div className="dropdown dropdown-action">
-                                                        <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
+                                                        <Link to="/admin#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
                                                         <div className="dropdown-menu dropdown-menu-end">
-                                                            <Link className="dropdown-item" to="edit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
-                                                            <Link className="dropdown-item" to="/view-booking"><i className="far fa-eye me-2" />View</Link>
-                                                            <Link className="dropdown-item" to="/"><i className="far fa-trash-alt me-2" />Delete</Link>
+                                                            <Link className="dropdown-item" to="/adminedit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
+                                                            <Link className="dropdown-item" to="/admin/view-booking"><i className="far fa-eye me-2" />View</Link>
+                                                            <Link className="dropdown-item" to="/admin/"><i className="far fa-trash-alt me-2" />Delete</Link>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -180,13 +182,13 @@ const BookingPaid = () => {
                                                         <input type="checkbox" name="Booking" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="/view-booking" className="invoice-link">IN093439#@11</Link>
+                                                    <Link to="/admin/view-booking" className="invoice-link">IN093439#@11</Link>
                                                 </td>
                                                 <td>Marketing</td>
                                                 <td>7 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-08.jpg" alt="User Image" /> Russell Copeland</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-08.jpg" alt="User Image" /> Russell Copeland</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 3,470</td>
@@ -194,11 +196,11 @@ const BookingPaid = () => {
                                                 <td><span className="badge bg-success-light">Paid</span></td>
                                                 <td className="text-end">
                                                     <div className="dropdown dropdown-action">
-                                                        <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
+                                                        <Link to="/admin#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
                                                         <div className="dropdown-menu dropdown-menu-end">
-                                                            <Link className="dropdown-item" to="edit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
-                                                            <Link className="dropdown-item" to="/view-booking"><i className="far fa-eye me-2" />View</Link>
-                                                            <Link className="dropdown-item" to="/"><i className="far fa-trash-alt me-2" />Delete</Link>
+                                                            <Link className="dropdown-item" to="/adminedit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
+                                                            <Link className="dropdown-item" to="/admin/view-booking"><i className="far fa-eye me-2" />View</Link>
+                                                            <Link className="dropdown-item" to="/admin/"><i className="far fa-trash-alt me-2" />Delete</Link>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -209,13 +211,13 @@ const BookingPaid = () => {
                                                         <input type="checkbox" name="Booking" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="/view-booking" className="invoice-link">IN093439#@12</Link>
+                                                    <Link to="/admin/view-booking" className="invoice-link">IN093439#@12</Link>
                                                 </td>
                                                 <td>Repairs</td>
                                                 <td>24 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /> Joseph Collins</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /> Joseph Collins</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 8,265</td>
@@ -223,11 +225,11 @@ const BookingPaid = () => {
                                                 <td><span className="badge bg-success-light">Paid</span></td>
                                                 <td className="text-end">
                                                     <div className="dropdown dropdown-action">
-                                                        <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
+                                                        <Link to="/admin#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
                                                         <div className="dropdown-menu dropdown-menu-end">
-                                                            <Link className="dropdown-item" to="edit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
-                                                            <Link className="dropdown-item" to="/view-booking"><i className="far fa-eye me-2" />View</Link>
-                                                            <Link className="dropdown-item" to="/"><i className="far fa-trash-alt me-2" />Delete</Link>
+                                                            <Link className="dropdown-item" to="/adminedit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
+                                                            <Link className="dropdown-item" to="/admin/view-booking"><i className="far fa-eye me-2" />View</Link>
+                                                            <Link className="dropdown-item" to="/admin/"><i className="far fa-trash-alt me-2" />Delete</Link>
                                                         </div>
                                                     </div>
                                                 </td>
@@ -238,13 +240,13 @@ const BookingPaid = () => {
                                                         <input type="checkbox" name="Booking" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="/view-booking" className="invoice-link">IN093439#@13</Link>
+                                                    <Link to="/admin/view-booking" className="invoice-link">IN093439#@13</Link>
                                                 </td>
                                                 <td>Software</td>
                                                 <td>17 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-11.jpg" alt="User Image" /> Jennifer Floyd</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-11.jpg" alt="User Image" /> Jennifer Floyd</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 5,200</td>
@@ -252,11 +254,11 @@ const BookingPaid = () => {
                                                 <td><span className="badge bg-success-light">Paid</span></td>
                                                 <td className="text-end">
                                                     <div className="dropdown dropdown-action">
-                                                        <Link to="#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
+                                                        <Link to="/admin#" className="action-icon dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false"><i className="fas fa-ellipsis-v" /></Link>
                                                         <div className="dropdown-menu dropdown-menu-end">
-                                                            <Link className="dropdown-item" to="edit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
-                                                            <Link className="dropdown-item" to="/view-booking"><i className="far fa-eye me-2" />View</Link>
-                                                            <Link className="dropdown-item" to="/"><i className="far fa-trash-alt me-2" />Delete</Link>
+                                                            <Link className="dropdown-item" to="/adminedit-booking.php"><i className="far fa-edit me-2" />Edit</Link>
+                                                            <Link className="dropdown-item" to="/admin/view-booking"><i className="far fa-eye me-2" />View</Link>
+                                                            <Link className="dropdown-item" to="/admin/"><i className="far fa-trash-alt me-2" />Delete</Link>
                                                         </div>
                                                     </div>
                                                 </td>

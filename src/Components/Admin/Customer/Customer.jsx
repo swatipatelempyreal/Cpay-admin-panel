@@ -11,12 +11,12 @@ const Customer = () => {
                         <div className="col">
                             <h3 className="page-title">Customers</h3>
                             <ul className="breadcrumb">
-                                <li className="breadcrumb-item"><Link to="dashboard">Dashboard</Link></li>
+                                <li className="breadcrumb-item"><Link to="/admindashboard">Dashboard</Link></li>
                                 <li className="breadcrumb-item active">Customers</li>
                             </ul>
                         </div>
                         <div className="col-auto">
-                            <Link to="/add-customer" className="btn btn-primary me-1">
+                            <Link to="/admin/add-customer" className="btn btn-primary me-1">
                                 <i className="fas fa-plus" />
                             </Link>
                         </div>
@@ -46,8 +46,8 @@ const Customer = () => {
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-02.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Brian Johnson <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-02.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Brian Johnson <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -55,15 +55,15 @@ const Customer = () => {
                                                 <td>16 Nov 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-03.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Marie Canales <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-03.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Marie Canales <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -71,15 +71,15 @@ const Customer = () => {
                                                 <td>8 Nov 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Barbara Moore <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Barbara Moore <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -87,15 +87,15 @@ const Customer = () => {
                                                 <td>24 Oct 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-05.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Greg Lynch <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-05.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Greg Lynch <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -103,15 +103,15 @@ const Customer = () => {
                                                 <td>11 Oct 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Karlene Chaidez <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Karlene Chaidez <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -119,15 +119,15 @@ const Customer = () => {
                                                 <td>29 Sep 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-07.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">John Blair <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-07.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">John Blair <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -135,15 +135,15 @@ const Customer = () => {
                                                 <td>13 Aug 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-08.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Russell Copeland <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-08.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Russell Copeland <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -151,15 +151,15 @@ const Customer = () => {
                                                 <td>2 Jul 2020</td>
                                                 <td><span className="badge badge-pill bg-danger-light">Inactive</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-09.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Leatha Bailey <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-09.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Leatha Bailey <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -167,15 +167,15 @@ const Customer = () => {
                                                 <td>20 Jun 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Joseph Collins <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Joseph Collins <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -183,15 +183,15 @@ const Customer = () => {
                                                 <td>9 May 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-11.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Jennifer Floyd <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-11.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Jennifer Floyd <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -199,15 +199,15 @@ const Customer = () => {
                                                 <td>17 Apr 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-12.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Alex Campbell <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-12.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Alex Campbell <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -215,15 +215,15 @@ const Customer = () => {
                                                 <td>30 Mar 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                             <tr>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-13.jpg" alt="User Image" /></Link>
-                                                        <Link to="/customer-profile">Wendell Ward <span>9876543210</span></Link>
+                                                        <Link to="/admin/customer-profile" className="avatar avatar-sm me-2"><img className="avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-13.jpg" alt="User Image" /></Link>
+                                                        <Link to="/admin/customer-profile">Wendell Ward <span>9876543210</span></Link>
                                                     </h2>
                                                 </td>
                                                 <td>example@gmail.com</td>
@@ -231,8 +231,8 @@ const Customer = () => {
                                                 <td>22 Feb 2020</td>
                                                 <td><span className="badge badge-pill bg-success-light">Active</span></td>
                                                 <td className="text-end">
-                                                    <Link to="/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
-                                                    <Link to="/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
+                                                    <Link to="/admin/edit-customer" className="btn btn-sm btn-white text-success me-2"><i className="far fa-edit me-1" /> Edit</Link>
+                                                    <Link to="/admin/" className="btn btn-sm btn-white text-danger me-2"><i className="far fa-trash-alt me-1" />Delete</Link>
                                                 </td>
                                             </tr>
                                         </tbody>

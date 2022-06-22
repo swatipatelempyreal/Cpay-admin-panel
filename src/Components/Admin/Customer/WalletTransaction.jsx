@@ -1,5 +1,6 @@
 import React from 'react'
 import {Link} from 'react-router-dom'
+import { FilterComponent } from '../Common'
 
 const WalletTransaction = () => {
     return (
@@ -10,13 +11,14 @@ const WalletTransaction = () => {
                         <div className="col">
                             <h3 className="page-title">Wallet Transactions</h3>
                             <ul className="breadcrumb">
-                                <li className="breadcrumb-item"><Link to="dashboard">Dashboard</Link></li>
+                                <li className="breadcrumb-item"><Link to="/admin/dashboard">Dashboard</Link></li>
                                 <li className="breadcrumb-item active"> Wallet Transactions</li>
                             </ul>
                         </div>
                     </div>
                 </div>
                 {/* common component import here */}
+                <FilterComponent />
                 <div className="row">
                     <div className="col-xl-4 col-sm-6 col-12">
                         <div className="card inovices-card">
@@ -88,13 +90,13 @@ const WalletTransaction = () => {
                                                         <input type="checkbox" name="transaction" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="view-transaction.php" className="invoice-link">IN093439#@09</Link>
+                                                    <Link to="/admin/view-transaction.php" className="invoice-link">IN093439#@09</Link>
                                                 </td>
                                                 <td>Advertising</td>
                                                 <td>16 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /> Barbara Moore</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-04.jpg" alt="User Image" /> Barbara Moore</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 30,000</td>
@@ -113,7 +115,7 @@ const WalletTransaction = () => {
                                                 <td>14 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /> Karlene Chaidez</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-06.jpg" alt="User Image" /> Karlene Chaidez</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 70,000</td>
@@ -132,7 +134,7 @@ const WalletTransaction = () => {
                                                 <td>27 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/logo-small.png" alt="User Image" /> CPay</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/logo-small.png" alt="User Image" /> CPay</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 1,00,000</td>
@@ -151,7 +153,7 @@ const WalletTransaction = () => {
                                                 <td>28 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /> Joseph Collins</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/profiles/avatar-10.jpg" alt="User Image" /> Joseph Collins</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 50,000</td>
@@ -170,7 +172,7 @@ const WalletTransaction = () => {
                                                 <td>29 Mar 2022</td>
                                                 <td>
                                                     <h2 className="table-avatar">
-                                                        <Link to="/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/logo-small.png" alt="User Image" /> CPay</Link>
+                                                        <Link to="/admin/profile"><img className="avatar avatar-sm me-2 avatar-img rounded-circle" src="../inner-assets/img/logo-small.png" alt="User Image" /> CPay</Link>
                                                     </h2>
                                                 </td>
                                                 <td className="text-primary">AED 25,000</td>
