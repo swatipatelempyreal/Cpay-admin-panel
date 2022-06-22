@@ -1,11 +1,10 @@
 import { BrowserRouter as Router} from "react-router-dom";
-import AdminRoutes from './routes/AdminRoutes'
-
+import Routings from './routes'
 function App() {
   return (
     <div className="App">
       <Router>
-        <AdminRoutes />
+       <Routings/>
       </Router>
     </div>
   );
