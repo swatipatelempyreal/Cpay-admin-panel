@@ -24,8 +24,8 @@ const AdminSidebar = () => {
                             <span> Merchant</span> <span className="menu-arrow" />
                         </a>
                         <ul style={{ display: hideShow }}>
-                            <li><NavLink to="/merchants">Merchants</NavLink></li>
-                            <li><NavLink to="/merchant-transactions">Merchant Transactions List</NavLink></li>
+                            <li><NavLink to="/admin/merchants">Merchants</NavLink></li>
+                            <li><NavLink to="/admin/merchant-transactions">Merchant Transactions List</NavLink></li>
                         </ul>
                     </li>
                     
@@ -38,10 +38,10 @@ const AdminSidebar = () => {
                             <span> Customer</span> <span className="menu-arrow" />
                         </a>
                         <ul style={{ display: customerhideShow }}>
-                            <li><NavLink to="/customer">Customers</NavLink></li>
-                            <li><NavLink to="/customer-booking-list">Customer Booking List</NavLink></li>
-                            <li><NavLink to="/view-booking">Customer Booking Details</NavLink></li>
-                            <li><NavLink to="/wallet-transaction">Customer Wallet</NavLink></li>
+                            <li><NavLink to="/admin/customer">Customers</NavLink></li>
+                            <li><NavLink to="/admin/customer-booking-list">Customer Booking List</NavLink></li>
+                            <li><NavLink to="/admin/view-booking">Customer Booking Details</NavLink></li>
+                            <li><NavLink to="/admin/wallet-transaction">Customer Wallet</NavLink></li>
                         </ul>
                     </li>
                     <li className="submenu">
@@ -64,7 +64,7 @@ const AdminSidebar = () => {
                         </ul>
                     </li>
                     <li>
-                        <Link to="/profile"><i data-feather="user" /> <span>Profile</span></Link>
+                        <Link to="/admin/profile"><i data-feather="user" /> <span>Profile</span></Link>
                     </li>
                     <li>
                         <a href="settings.php"><i data-feather="settings" /> <span>Settings</span></a>
