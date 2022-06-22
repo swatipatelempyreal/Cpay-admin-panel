@@ -1,4 +1,5 @@
 import { Route, Routes } from "react-router-dom";
+import { Merchants, MerchantTransaction } from "../Components/Admin/Merchant";
 import { AdminLayout } from '../Components/Layout'
 
 const AdminRoutes = () => {
@@ -7,7 +8,8 @@ const AdminRoutes = () => {
     <>
     <AdminLayout/>
     <Routes>
-      {/* <Route exact path="/" element={<Dashboard />} /> */}
+      <Route exact path="/merchants" element={<Merchants />} />
+      <Route exact path="/merchant-transactions" element={<MerchantTransaction />} />
     
     </Routes>
   </>
