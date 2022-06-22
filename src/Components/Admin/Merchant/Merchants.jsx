@@ -26,7 +26,8 @@ const Merchants = () => {
                         </div>
                     </div>
                 </div>
-
+                
+                {/* Common Component here */}
                 <FilterComponent />
 
                 <div className="row">

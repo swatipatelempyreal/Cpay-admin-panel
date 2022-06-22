@@ -5,7 +5,6 @@ import AddMerchant from "../Components/Admin/Merchant/AddMerchant";
 import CustomerProfile from "../Components/Admin/Profile/CustomerProfile";
 import Profile from "../Components/Admin/Profile/Profile";
 import {Customer, CustomerBookingList, EditCustomer, AddCustomer, BookingPaid, BookingOverdue, ViewBooking, BookingCancelled, WalletTransaction} from "../Components/Admin/Customer";
-import { Merchants, MerchantTransaction } from "../Components/Admin/Merchant";
 import { AdminLayout } from '../Components/Layout'
 
 const AdminRoutes = () => {
