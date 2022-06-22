@@ -42,6 +42,7 @@ const AdminSidebar = () => {
                             <li><NavLink to="/admin/customer-booking-list">Customer Booking List</NavLink></li>
                             <li><NavLink to="/admin/view-booking">Customer Booking Details</NavLink></li>
                             <li><NavLink to="/admin/wallet-transaction">Customer Wallet</NavLink></li>
+                            <li><NavLink to="/admin/customer-credit-request">Customer Credit Rating</NavLink></li>
                         </ul>
                     </li>
                     <li className="submenu">

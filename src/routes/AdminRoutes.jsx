@@ -6,6 +6,7 @@ import CustomerProfile from "../Components/Admin/Profile/CustomerProfile";
 import Profile from "../Components/Admin/Profile/Profile";
 import {Customer, CustomerBookingList, EditCustomer, AddCustomer, BookingPaid, BookingOverdue, ViewBooking, BookingCancelled, WalletTransaction} from "../Components/Admin/Customer";
 import { AdminLayout } from '../Components/Layout'
+import CustomerCreditRequest from "../Components/Admin/Customer/CustomerCreditRequest";
 
 const AdminRoutes = () => {
   return (
@@ -29,6 +30,8 @@ const AdminRoutes = () => {
       <Route exact path="/profile" element={<Profile />} />
       <Route exact path="/customer-profile" element={<CustomerProfile />} />
       <Route exact path="/add-merchant" element={<AddMerchant />} />
+      <Route exact path="/customer-credit-request" element={<CustomerCreditRequest />} />
+        
     </Routes>
   </>
   )
