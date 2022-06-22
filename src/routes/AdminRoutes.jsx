@@ -1,9 +1,6 @@
 import { Route, Routes } from "react-router-dom";
-<<<<<<< HEAD
-import Customer from "../Components/Customer/Customer";
-=======
+import {Customer, CustomerBookingList, EditCustomer, AddCustomer, BookingPaid, BookingOverdue, ViewBooking, BookingCancelled, WalletTransaction} from "../Components/Admin/Customer";
 import { Merchants, MerchantTransaction } from "../Components/Admin/Merchant";
->>>>>>> df426e61553edb50aa135ab44a60842a25214337
 import { AdminLayout } from '../Components/Layout'
 
 const AdminRoutes = () => {
@@ -12,12 +9,17 @@ const AdminRoutes = () => {
     <>
     <AdminLayout/>
     <Routes>
-<<<<<<< HEAD
       <Route exact path="/customer" element={<Customer />} />
-=======
+      <Route exact path="/add-customer" element={<AddCustomer />} />
+      <Route exact path="/edit-customer" element={<EditCustomer />} />
+      <Route exact path="/customer-booking-list" element={<CustomerBookingList />} />
+      <Route exact path="/booking-paid" element={<BookingPaid />} />
+      <Route exact path="/booking-overdue" element={<BookingOverdue />} />
+      <Route exact path="/booking-cancelled" element={<BookingCancelled />} />
+      <Route exact path="/view-booking" element={<ViewBooking />} />
+      <Route exact path="/wallet-transaction" element={<WalletTransaction />} />
       <Route exact path="/merchants" element={<Merchants />} />
       <Route exact path="/merchant-transactions" element={<MerchantTransaction />} />
->>>>>>> df426e61553edb50aa135ab44a60842a25214337
     
     </Routes>
   </>
