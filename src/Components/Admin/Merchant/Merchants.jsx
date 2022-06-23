@@ -20,7 +20,7 @@ const Merchants = () => {
                             <Link to="/Admin/add-merchant" className="btn btn-primary me-1">
                                 <i className="fas fa-plus" />
                             </Link>
-                            <Link className="btn btn-primary filter-btn" to="/" id="filter_search">
+                            <Link className="btn btn-primary filter-btn" to="#" id="filter_search">
                                 <i className="fas fa-filter" />
                             </Link>
                         </div>
