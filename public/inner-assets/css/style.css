@@ -437,6 +437,21 @@ table.table td,table.table th {
 .table .dropdown-item i {
 	font-size: 16px;
 }
+/* *****23-06 add customer****** */
+.btnstl{
+	background-color: #7638ff;
+	border-radius: 0.25rem;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	color: white;
+}
+.disbtnstl{
+	background-color: #c8b8ec;
+	border-radius: 0.25rem;
+	padding: 0.375rem 0.75rem;
+	font-size: 1rem;
+	color: white;
+}
 
 /*-----------------
 	3. Helper Class
