@@ -4,10 +4,10 @@ const AdminHeader = () => {
     return (
         <div>
             <div className="header-left header-left-one">
-                <a href="index.php" className="logo">
+                <a href="/Admin/dashboard" className="logo">
                     <img src="../inner-assets/img/logo.png" alt="Logo" />
                 </a>
-                <a href="index.php" className="logo logo-small">
+                <a href="/Admin/dashboard" className="logo logo-small">
                     <img src="../inner-assets/img/logo-small.png" alt="Logo" width={30} height={30} />
                 </a>
             </div>
@@ -20,7 +20,9 @@ const AdminHeader = () => {
             <ul className="nav nav-tabs user-menu">
                 <li className="nav-item dropdown">
                     <a href="#" className="dropdown-toggle nav-link" data-bs-toggle="dropdown">
-                        <i data-feather="bell" /> <span className="badge rounded-pill">5</span>
+                        <i data-feather="bell" /> 
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg>
+                        <span className="badge rounded-pill">5</span>
                     </a>
                     <div className="dropdown-menu notifications">
                         <div className="topnav-dropdown-header">

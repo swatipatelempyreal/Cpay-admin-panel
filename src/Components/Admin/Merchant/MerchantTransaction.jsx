@@ -137,7 +137,7 @@ const MerchantTransaction = () => {
                                                         <input type="checkbox" name="transaction" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="view-transaction.php" className="invoice-link">IN093439#@09</Link>
+                                                    <Link to="#" className="invoice-link">IN093439#@09</Link>
                                                 </td>
                                                 <td>Advertising</td>
                                                 <td>16 Mar 2022</td>
@@ -156,7 +156,7 @@ const MerchantTransaction = () => {
                                                         <input type="checkbox" name="transaction" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="view-transaction.php" className="invoice-link">IN093439#@10</Link>
+                                                    <Link to="#" className="invoice-link">IN093439#@10</Link>
                                                 </td>
                                                 <td>Food</td>
                                                 <td>14 Mar 2022</td>
@@ -175,7 +175,7 @@ const MerchantTransaction = () => {
                                                         <input type="checkbox" name="transaction" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="view-transaction.php" className="invoice-link">IN093439#@11</Link>
+                                                    <Link to="#" className="invoice-link">IN093439#@11</Link>
                                                 </td>
                                                 <td>Marketing</td>
                                                 <td>7 Mar 2022</td>
@@ -194,7 +194,7 @@ const MerchantTransaction = () => {
                                                         <input type="checkbox" name="transaction" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="view-transaction.php" className="invoice-link">IN093439#@12</Link>
+                                                    <Link to="#" className="invoice-link">IN093439#@12</Link>
                                                 </td>
                                                 <td>Repairs</td>
                                                 <td>24 Mar 2022</td>
@@ -213,7 +213,7 @@ const MerchantTransaction = () => {
                                                         <input type="checkbox" name="transaction" />
                                                         <span className="checkmark" />
                                                     </label>
-                                                    <Link to="view-transaction.php" className="invoice-link">IN093439#@13</Link>
+                                                    <Link to="#" className="invoice-link">IN093439#@13</Link>
                                                 </td>
                                                 <td>Software</td>
                                                 <td>17 Mar 2022</td>
